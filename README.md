@@ -1,5 +1,5 @@
 # Todo App 
-Es una aplicación web desarrollada en el [Curso de Introducción a React.js en Platzi](https://platzi.com/cursos/react/)
+Es una aplicación web (lista de tareas) desarrollada en el [Curso de Introducción a React.js en Platzi](https://platzi.com/cursos/react/)
 
 ## Instalación
 ~~~

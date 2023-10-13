@@ -4,7 +4,11 @@ Es una aplicación web desarrollada en el [Curso de Introducción a React.js en 
 ## Instalación
 ~~~
 git clone https://github.com/Yovani-Morales/todo-app.git
+~~~
+~~~
 npm install
+~~~
+~~~
 npm start
 ~~~
 

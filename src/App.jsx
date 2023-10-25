@@ -1,20 +1,21 @@
+import React from "react";
 import { Modal } from './components/Modal';
 import { TodoCounter } from './components/TodoCounter';
 import { TodoSearch } from './components/TodoSearch';
 import { TodoList } from './components/TodoList';
 import { TodoItem } from './components/TodoItem';
 import { CreateTodoButton } from './components/CreateTodoButton';
+import { useLocalStorage } from "./hooks/useLocalStorage";
 import './style/style.css';
-import React from "react";
 
-const defaultTodos = [
-  { text: 'Tomar el curso de Intro a React.js', completed: false },
-  { text: 'Llorar con la Llorona', completed: false },
-  { text: 'Cortar la cebolla', completed: true }
-];
+// const defaultTodos = [
+//   { text: 'Tomar el curso de Intro a React.js', completed: false },
+//   { text: 'Llorar con la Llorona', completed: false },
+//   { text: 'Cortar la cebolla', completed: true }
+// ];
 
 function App() {
-  const [todos, setTodos] = React.useState(defaultTodos);
+  const [todos, saveTodos] = useLocalStorage('TODOS_V1', []);
   const [searchValue, setSearchValue] = React.useState('');
 
   const completedTodos = todos.filter(todo => !!todo.completed).length;
@@ -30,14 +31,14 @@ function App() {
     const newTodos = [...todos];
     const todoIndex = newTodos.findIndex(todo => todo.text === text);
     newTodos[todoIndex].completed = true;
-    setTodos(newTodos);
+    saveTodos(newTodos);
   }
 
   const deleteTodo = (text) => {
     const newTodos = [...todos];
     const todoIndex = newTodos.findIndex(todo => todo.text === text);
     newTodos.splice(todoIndex, 1);
-    setTodos(newTodos);
+    saveTodos(newTodos);
   }
 
   return (

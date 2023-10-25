@@ -1,4 +1,4 @@
-import iconAdd from '../icon-add.svg';
+import iconAdd from '../svg/icon-add.svg';
 
 const CreateTodoButton = () => {
   let count = 1;

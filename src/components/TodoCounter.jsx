@@ -1,6 +1,6 @@
 const TodoCounter = ({ completed, total }) => {
     return (
-        completed === total 
+        completed === total && total !== 0
         ?
             <h1>Has completado todo tus TODOs 👽✌️🔥</h1>
         :

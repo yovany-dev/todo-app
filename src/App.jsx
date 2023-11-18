@@ -6,13 +6,10 @@ import { TodoList } from './components/TodoList';
 import { TodoItem } from './components/TodoItem';
 import { CreateTodoButton } from './components/CreateTodoButton';
 import { useLocalStorage } from "./hooks/useLocalStorage";
+import { TodosLoading } from "./components/TodosLoading";
+import { TodosError } from "./components/TodosError";
+import { EmptyTodos } from "./components/EmptyTodos";
 import './style/style.css';
-
-// const defaultTodos = [
-//   { text: 'Tomar el curso de Intro a React.js', completed: false },
-//   { text: 'Llorar con la Llorona', completed: false },
-//   { text: 'Cortar la cebolla', completed: true }
-// ];
 
 function App() {
   const {
@@ -55,9 +52,9 @@ function App() {
         setSearchValue={setSearchValue}
       />
       <TodoList>
-        {loading && <p>Estamos cargando...</p>}
-        {error && <p>Desesperate, hubo un error!!</p>}
-        {(!loading && searchedTodo.length === 0) && <p>Sin TODOS</p>}
+        {loading && <TodosLoading />}
+        {error && <TodosError />}
+        {(!loading && searchedTodo.length === 0) && <EmptyTodos />}
 
         {searchedTodo.map(todo => {
           return <TodoItem 

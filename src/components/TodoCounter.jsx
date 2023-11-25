@@ -1,4 +1,9 @@
-const TodoCounter = ({ completed, total }) => {
+import React from "react";
+import { TodoContext } from "./TodoContext/TodoContext";
+
+const TodoCounter = () => {
+    const {completedTodos: completed, totalTodos: total} = React.useContext(TodoContext);
+
     return (
         completed === total && total !== 0
         ?

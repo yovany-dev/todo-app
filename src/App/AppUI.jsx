@@ -1,5 +1,4 @@
 import React from 'react';
-import { Modal } from '../components/Modal';
 import { TodoCounter } from '../components/TodoCounter';
 import { TodoSearch } from '../components/TodoSearch';
 import { TodoList } from '../components/TodoList';
@@ -8,6 +7,7 @@ import { TodosLoading } from "../components/TodosLoading";
 import { TodosError } from "../components/TodosError";
 import { EmptyTodos } from "../components/EmptyTodos";
 import { CreateTodoButton } from '../components/CreateTodoButton';
+import { Modal } from '../components/Modal';
 import { TodoContext } from '../components/TodoContext/TodoContext';
 
 const AppUI = () => {
@@ -16,12 +16,12 @@ const AppUI = () => {
         error,
         searchedTodo,
         completeTodo,
-        deleteTodo
+        deleteTodo,
+        openModal,
     } = React.useContext(TodoContext);
 
     return (
         <>
-        <Modal />
         <TodoCounter />
         <TodoSearch />
         <TodoList>
@@ -40,6 +40,11 @@ const AppUI = () => {
             ))}
         </TodoList>
         <CreateTodoButton />
+        {openModal && (
+            <Modal>
+                La funcinalidad de agregar TODO
+            </Modal>
+        )}
         </>
     )
 }

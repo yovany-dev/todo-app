@@ -1,16 +1,17 @@
-const Modal = () => {
+import React from 'react';
+import '../style/form.css';
+
+const TodoForm = () => {
   return (
-    <div className="modal-container">
-      <div className="modal">
-        <h2>Escribe tu <br /> nuevo TODO</h2>
+    <form className='form' onSubmit={e => e.preventDefault()}>
+      <h2>Escribe tu <br /> nuevo TODO</h2>
         <textarea placeholder="Desarrollar componentes de React"></textarea>
         <div className="btn-container">
           <button className="btn close">Cancelar</button>
           <button className="btn add">Añadir</button>
         </div>
-      </div>
-    </div>
+    </form>
   )
 }
 
-export { Modal };
+export { TodoForm };

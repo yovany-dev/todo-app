@@ -113,5 +113,10 @@ li p {
 }
 
 .btn-add img {
+    transition: all .5s ease;
     width: 50px;
+}
+
+.btn-add.close img {
+    transform: rotate(225deg);
 }

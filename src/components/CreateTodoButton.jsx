@@ -4,8 +4,16 @@ import iconAdd from '../svg/icon-add.svg';
 
 const CreateTodoButton = () => {
   const {setOpenModal} = React.useContext(TodoContext);
+
+  function btnHandler() {
+    const btn = document.querySelector('.btn-add');
+    btn.classList.toggle('close');
+
+    setOpenModal(state => !state);
+  }
+
   return (
-    <button onClick={() => setOpenModal(state => !state)} className='btn-add'><img src={iconAdd} alt="icon add" /></button>
+    <button onClick={btnHandler} className='btn-add'><img src={iconAdd} alt="icon add" /></button>
   )
 }
 

@@ -13,6 +13,8 @@ const TodoForm = () => {
   }
 
   const onCancel = () => {
+    const btn = document.querySelector('.btn-add');
+    btn.classList.remove('close');
     setOpenModal(false);
   }
 

@@ -1,9 +1,11 @@
+import React from 'react';
+import { TodoContext } from './TodoContext/TodoContext';
 import iconAdd from '../svg/icon-add.svg';
 
 const CreateTodoButton = () => {
-  let count = 1;
+  const {setOpenModal} = React.useContext(TodoContext);
   return (
-    <button onClick={(e) => console.log(count++)} className='btn-add'><img src={iconAdd} alt="icon add" /></button>
+    <button onClick={() => setOpenModal(state => !state)} className='btn-add'><img src={iconAdd} alt="icon add" /></button>
   )
 }
 

@@ -5,7 +5,7 @@ Es una aplicación web (lista de tareas) desarrollada en el [Curso de Introducci
 **Todo app** esta desarrollado para versiones [mobiles](https://yovani-morales.github.io/todo-app/).
 
 ## Capturas de pantalla 📷
-[todo app screenshots](https://yovani-morales.github.io/todo-app/src/screenshot/imgs.png)
+![todo app screenshots](https://github.com/Yovani-Morales/todo-app/blob/main/src/screenshot/imgs.png)
 
 ## Instalación 💻
 ~~~

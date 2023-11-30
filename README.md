@@ -22,7 +22,6 @@ npm start
 - [Curso de Introducción a React.js en Platzi](https://platzi.com/cursos/react/).
 - [Diseño de Figma](https://www.figma.com/file/3aZkIjXMEzBDACmWxqUVes/TODO-Machine-Mockup?type=design&node-id=0-1&mode=design).
 - [Vista en vivo](https://yovani-morales.github.io/todo-app/).
-- []().
 
 ## Getting Started with Create React App
 

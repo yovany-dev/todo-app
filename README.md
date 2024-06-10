@@ -2,14 +2,14 @@
 Es una aplicación web (lista de tareas) desarrollada en el [Curso de Introducción a React.js en Platzi](https://platzi.com/cursos/react/).
 
 ## Vista previa en vivo 🚀🔥
-**Todo app** esta desarrollado para versiones [mobiles](https://yovani-morales.github.io/todo-app/).
+**Todo app** esta desarrollado para versiones [mobiles](https://yovany-dev.github.io/todo-app/).
 
 ## Capturas de pantalla 📷
-![todo app screenshots](https://github.com/Yovani-Morales/todo-app/blob/main/src/screenshot/imgs.png)
+![todo app screenshots](https://github.com/yovany-dev/todo-app/blob/main/src/screenshot/imgs.png)
 
 ## Instalación 💻
 ~~~
-git clone https://github.com/Yovani-Morales/todo-app.git
+git clone https://github.com/yovany-dev/todo-app.git
 ~~~
 ~~~
 npm install
@@ -21,7 +21,7 @@ npm start
 ## Enlaces 📎
 - [Curso de Introducción a React.js en Platzi](https://platzi.com/cursos/react/).
 - [Diseño de Figma](https://www.figma.com/file/3aZkIjXMEzBDACmWxqUVes/TODO-Machine-Mockup?type=design&node-id=0-1&mode=design).
-- [Vista en vivo](https://yovani-morales.github.io/todo-app/).
+- [Vista en vivo](https://yovany-dev.github.io/todo-app/).
 
 ## Getting Started with Create React App
 
